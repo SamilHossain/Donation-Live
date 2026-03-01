@@ -15,4 +15,4 @@ jobs:
           ffmpeg -re -stream_loop -1 -i "https://ia902808.us.archive.org/2/items/dlive/copy_B250B9C4-8E20-49FF-B7F4-97CA48372259.mov" \
           -vcodec libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 60 -c:a aac -b:a 128k -ar 44100 \
-          -f flv "rtmp://a.rtmp.youtube.com/live2/$KEY"
+          -f flv "rtmp://b.rtmp.youtube.com/live2?backup=1/$STREAM_KEY"
